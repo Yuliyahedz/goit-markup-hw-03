@@ -46,20 +46,25 @@ img {
  /*---------HEADER--------------------*/
 
 .header-section {
-    display: flex;
-    align-items: center;
-    padding-top: 24px;
-    padding-bottom: 25px;
+    border: 1px solid #ECECEC;
 }
 
-.navigation-list,
-.address-list {
+.header-section .container {
+    padding-top: 24px;
+    padding-bottom: 25px;
+    display: flex;
+    background: var(--lighttitle-text-color);
+}
+
+.navigation,
+.navigation-list {
     display: flex;
     align-items: center;
-   }
+}
 
-.header-section {
-    background: var(--lighttitle-text-color);
+.address-list {
+    display: flex;    
+    align-items: center;   
 }
 
 .logo-link {
@@ -110,17 +115,17 @@ img {
     color: var(--accent-color);    
 }
 
-.address-list {
-    margin-left: auto
-}
-
 .address-list-link {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.143;
     letter-spacing: 0.02em;
     color: var(--primary-text-color);   
-    }
+}
+
+.address-list {
+    margin-left: auto;
+}
 
 .address-list-item:not(:last-child) {
     margin-right: 50px;
@@ -132,7 +137,9 @@ img {
 
 .hero-section {
     background: var(--darksections-color);
-    text-align: center;    
+    text-align: center;
+    padding-top: 200px;
+    padding-bottom: 200px;    
 }
 
 .hero-title {
@@ -141,9 +148,7 @@ img {
     line-height: 1.364;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    color: var(--lighttitle-text-color);
-
-    padding-top: 200px;    
+    color: var(--lighttitle-text-color);        
 }
 
 .modal-button {
@@ -158,7 +163,6 @@ img {
     width: 200px;
     height: 50px;
     margin-top: 30px;
-    margin-bottom: 200px;
 }
  
 /*---------HERO END---------*/
@@ -166,19 +170,18 @@ img {
 /*------ADVANTAGES------*/ 
 
 .advantages-section {
-    background: var(--lightsection-colo);   
+    background: var(--lightsection-colo);
+    padding-top: 94px;
+    padding-bottom: 94px;   
 }
 
 .advantages {
     display: flex;
-    margin-top: 94px;
-    margin-bottom: 94px;
 }
 
 .advantages-list-item {
     width: 270px;
     height: 101px;
-
 }
 
 .advantages-list-item:not(:last-child) {
@@ -211,7 +214,7 @@ img {
 
 .jobs-section {
     background: var(--lightsection-colo);
-    margin-bottom: 94px;
+    padding-bottom: 94px;
 }
 
 .jobs-list {
@@ -246,34 +249,36 @@ img {
 
 .team-section {
     background: var(--middlesection-color);
+    padding-top: 95px;
+    padding-bottom: 94px;
 }
 
 .team-title {
-    padding-bottom: 50px;
-    padding-top: 95px;
+    margin-bottom: 50px;    
 }
 
 .team-list {
-    display: flex;
-    justify-content: space-between;
-    
+    display: flex;      
 }
 
 .team-list-item {
     width: 270px;
-    height: 368px;
-    margin-bottom: 94px;
-
+    height: 368px; 
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
-    background-color: var( --lighttitle-text-color);
-     
+    background-color: var( --lighttitle-text-color);     
+}
+
+.team-list-item:not(:last-child) {
+    margin-right: 30px;
 }
 
 .team-list-content {
     text-align: center;
     padding-top: 30px;
-    padding-bottom: 30px;  
+    padding-bottom: 30px;
+    padding-left: 2px;
+    padding-right: 2px;  
 }
     
 .team-list-member {
@@ -312,7 +317,7 @@ img {
 .footer .address {
     display: flex;
     flex-direction: column;
-    padding-top: 20px;    
+    margin-top: 20px;    
 }
 
 .logo-footer {
@@ -358,11 +363,19 @@ img {
 
 /*--------PORTFOLIO GALERY-----*/
 
+.galery .container {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
 .galery-filter {
     display: flex;
-    justify-content: center;
-    margin-top: 94px;
+    justify-content: center;    
     margin-bottom: 50px;
+}
+
+.galery-filter-item:not(:last-child) {
+    margin-right: 8px;
 }
 
 .galery-filter-button:hover,
@@ -384,14 +397,12 @@ img {
     padding-right: 22px;
     padding-left: 22px;
     padding-top: 6px;
-    padding-bottom: 6px;
-    margin-right: 8px;    
+    padding-bottom: 6px;     
 }
 
 .galery-list{
     display: flex;
     flex-wrap: wrap;
-    padding-bottom: 94px;
 }
 
 .galery-list-item {
@@ -399,8 +410,6 @@ img {
     margin-right: 30px;
     margin-bottom: 30px;
     background: var(--lighttitle-text-color);
-    border: 1px solid #EEEEEE;
-    border-radius: 4px;  
 }
 
 .galery-list-item:nth-child(3n) {
@@ -431,9 +440,10 @@ img {
 .galery-list-text {
     padding-top: 20px;
     padding-bottom: 20px;
-    padding-left: 24px;    
+    padding-left: 24px;
+    padding-right: 2px;        
+    border: 1px solid #EEEEEE;    
 }
-
 
 /*--------PORTFOLIO GALERY END-------*/
 
