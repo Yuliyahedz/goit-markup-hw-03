@@ -57,14 +57,10 @@ img {
 }
 
 .navigation,
-.navigation-list {
+.navigation-list,
+.address-list {
     display: flex;
     align-items: center;
-}
-
-.address-list {
-    display: flex;    
-    align-items: center;   
 }
 
 .logo-link {
