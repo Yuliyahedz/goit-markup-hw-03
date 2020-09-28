@@ -50,8 +50,6 @@ img {
 }
 
 .header-section .container {
-    padding-top: 24px;
-    padding-bottom: 25px;
     display: flex;
     background: var(--lighttitle-text-color);
 }
@@ -125,6 +123,13 @@ img {
 
 .address-list-item:not(:last-child) {
     margin-right: 50px;
+}
+
+.navigation-list-link,
+.address-list-link {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
 }
 
 /*-------HEADER END--------------------*/
@@ -303,12 +308,9 @@ img {
 
 .footer {
     background: var(--darksections-color);
-}
-
-.footer .container {
     padding-top: 60px;
     padding-bottom: 60px;
-} 
+}
 
 .footer .address {
     display: flex;
@@ -359,7 +361,7 @@ img {
 
 /*--------PORTFOLIO GALERY-----*/
 
-.galery .container {
+.galery {
     padding-top: 94px;
     padding-bottom: 94px;
 }
@@ -437,7 +439,7 @@ img {
     padding-top: 20px;
     padding-bottom: 20px;
     padding-left: 24px;
-    padding-right: 2px;        
+    padding-right: 24px;        
     border: 1px solid #EEEEEE;    
 }
 
